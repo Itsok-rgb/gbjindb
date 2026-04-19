@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#2d132c" />
+  <title>For Jaan — Our Forever</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-one">
+  <div class="stars" aria-hidden="true"></div>
+  <div class="floating-hearts" aria-hidden="true"></div>
+  <canvas id="confetti" class="confetti-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a href="#home" class="logo">J<span class="heart-dot">♥</span>aan</a>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"></button>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#home" class="nav-section-link active">Home</a>
+      <a href="#timeline" class="nav-section-link">Timeline</a>
+      <a href="#memories" class="nav-section-link">Memories</a>
+      <a href="#confession" class="nav-section-link">Confession</a>
+      <a href="#surprises" class="nav-section-link">Surprises</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="main page-home">
+      <div class="hero">
+        <p class="eyebrow reveal" data-reveal>Our anniversary</p>
+        <h1 class="hero-title reveal" data-reveal>
+          <span class="line">To the girl who</span>
+          <span class="line accent">redefined <em>home</em></span>
+        </h1>
+        <p class="hero-sub reveal" data-reveal>
+          Jaan — this little corner of the internet exists for one reason: to wrap you in everything I feel but sometimes forget to say out loud.
+        </p>
+        <div class="hero-actions reveal" data-reveal>
+          <a href="#timeline" class="btn btn-primary">Walk through our story</a>
+          <a href="#confession" class="btn btn-ghost">Read my heart</a>
+        </div>
+        <button type="button" class="secret-orb" aria-label="Tap for a hidden note" title="Shh…">
+          <span class="orb-glow"></span>
+          <span class="orb-core">✦</span>
+        </button>
+        <div class="secret-popover" id="secretHome" hidden>
+          <p>You already found magic. Imagine what the rest holds.</p>
+        </div>
+      </div>
+
+      <div class="teaser-grid">
+        <a href="#timeline" class="teaser-card reveal" data-reveal>
+          <span class="teaser-icon">☽</span>
+          <h2>Timeline</h2>
+          <p>Every chapter that made <em>us</em>.</p>
+          <span class="teaser-hint">Tap — something moves</span>
+        </a>
+        <a href="#memories" class="teaser-card reveal" data-reveal>
+          <span class="teaser-icon">✿</span>
+          <h2>Memories</h2>
+          <p>Soft flashes of the life we’re building.</p>
+        </a>
+        <a href="#surprises" class="teaser-card reveal" data-reveal>
+          <span class="teaser-icon">♡</span>
+          <h2>Surprises</h2>
+          <p>Hidden winks only you would hunt for.</p>
+        </a>
+      </div>
+    </section>
+
+    <section id="timeline" class="main narrow">
+      <header class="page-head reveal" data-reveal>
+        <p class="eyebrow">Personalised for you</p>
+        <h1>Our timeline</h1>
+        <p class="lede">Replace the sample dates and lines below with <em>your</em> real story — look for <code>&lt;!-- CUSTOMISE --&gt;</code> in <code>index.html</code>.</p>
+      </header>
+
+      <ol class="timeline">
+        <!-- CUSTOMISE: change milestone titles and paragraphs to your real story -->
+        <li class="timeline-item reveal" data-reveal>
+          <button type="button" class="timeline-marker" aria-expanded="false" aria-controls="tl-1">
+            <span class="marker-dot"></span>
+            <span class="marker-date">Day we met</span>
+          </button>
+          <div class="timeline-panel" id="tl-1" hidden>
+            <p>The universe leaned in. I didn’t know yet that my favourite word would become your name.</p>
+            <span class="timeline-secret" tabindex="0">Hold press for a whisper…</span>
+            <span class="timeline-whisper" hidden>I replay this day when I need proof that magic is real.</span>
+          </div>
+        </li>
+        <li class="timeline-item reveal" data-reveal>
+          <button type="button" class="timeline-marker" aria-expanded="false" aria-controls="tl-2">
+            <span class="marker-dot"></span>
+            <span class="marker-date">First “us” moment</span>
+          </button>
+          <div class="timeline-panel" id="tl-2" hidden>
+            <p>That laugh. That ease. That quiet “oh” in my chest that said: <em>her</em>.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal" data-reveal>
+          <button type="button" class="timeline-marker" aria-expanded="false" aria-controls="tl-3">
+            <span class="marker-dot"></span>
+            <span class="marker-date">Officially yours</span>
+          </button>
+          <div class="timeline-panel" id="tl-3" hidden>
+            <p>The day we stopped counting coincidences and started counting on each other.</p>
+            <button type="button" class="mini-reveal">Tap for a tiny secret</button>
+            <p class="mini-reveal-text" hidden>I still get butterflies when you say my name like that.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal" data-reveal>
+          <button type="button" class="timeline-marker" aria-expanded="false" aria-controls="tl-4">
+            <span class="marker-dot"></span>
+            <span class="marker-date">Adventure / milestone</span>
+          </button>
+          <div class="timeline-panel" id="tl-4" hidden>
+            <p>Your courage beside mine. Your hand in chaos. Your peace in noise.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal" data-reveal>
+          <button type="button" class="timeline-marker" aria-expanded="false" aria-controls="tl-5">
+            <span class="marker-dot"></span>
+            <span class="marker-date">Today — our anniversary</span>
+          </button>
+          <div class="timeline-panel" id="tl-5" hidden>
+            <p>Another orbit around the sun, still choosing you. Still stunned by you. Still yours.</p>
+            <a href="#confession" class="inline-link">Next: something I need you to read →</a>
+          </div>
+        </li>
+      </ol>
+
+      <p class="edit-hint reveal" data-reveal>
+        <small>Edit the timeline block inside <code>index.html</code> to swap milestones for your real dates and memories.</small>
+      </p>
+
+      <p class="section-jump reveal" data-reveal><a href="#memories" class="btn btn-ghost">Continue to memories</a></p>
+    </section>
+
+    <section id="memories" class="main">
+      <header class="page-head reveal" data-reveal>
+        <p class="eyebrow">Little museums of us</p>
+        <h1>Memories</h1>
+        <p class="lede">Each card hides a second layer — tap, hold, or flip. Add your own photos by replacing the gradient blocks with <code>&lt;img&gt;</code> tags in <code>index.html</code>.</p>
+      </header>
+
+      <div class="memory-grid">
+        <article class="memory-card reveal" data-reveal>
+          <div class="memory-visual memory-a" role="img" aria-label="Memory placeholder — add your photo"></div>
+          <div class="memory-body">
+            <h2>Morning light</h2>
+            <p>The way quiet feels when you’re next to me.</p>
+            <button type="button" class="flip-trigger" aria-expanded="false">Flip this memory</button>
+          </div>
+          <div class="memory-back" hidden>
+            <p>You turned ordinary mornings into something I wait for.</p>
+          </div>
+        </article>
+
+        <article class="memory-card reveal" data-reveal>
+          <div class="memory-visual memory-b" role="img" aria-label="Memory placeholder"></div>
+          <div class="memory-body">
+            <h2>Roads &amp; detours</h2>
+            <p>Every journey is better when your playlist is the soundtrack.</p>
+            <span class="scratch-label">Scratch to reveal</span>
+            <div class="scratch-area" role="presentation">
+              <canvas class="scratch-canvas" width="280" height="72" aria-hidden="true"></canvas>
+              <p class="scratch-message">I’d take the long route forever if you’re in the passenger seat.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="memory-card reveal" data-reveal>
+          <div class="memory-visual memory-c" role="img" aria-label="Memory placeholder"></div>
+          <div class="memory-body">
+            <h2>Soft chaos</h2>
+            <p>Inside jokes, sleepy smiles, and the beautiful mess of <em>us</em>.</p>
+            <div class="heart-row" aria-label="Tap hearts">
+              <button type="button" class="heart-btn" data-msg="You’re my favourite notification.">♥</button>
+              <button type="button" class="heart-btn" data-msg="I fall in love with you in new ways daily.">♥</button>
+              <button type="button" class="heart-btn" data-msg="Thank you for being gentle with my heart.">♥</button>
+            </div>
+            <p class="heart-toast" aria-live="polite"></p>
+          </div>
+        </article>
+
+        <article class="memory-card memory-wide reveal" data-reveal>
+          <div class="memory-visual memory-d" role="img" aria-label="Memory placeholder"></div>
+          <div class="memory-body">
+            <h2>The photo we’ll frame someday</h2>
+            <p>Replace this block with your favourite picture together — the layout is ready for it.</p>
+            <details class="memory-details">
+              <summary>Hidden caption (tap)</summary>
+              <p>Jaan — you are the proof I show my past self that good things were coming.</p>
+            </details>
+          </div>
+        </article>
+      </div>
+
+      <p class="section-jump reveal" data-reveal><a href="#confession" class="btn btn-primary">Ready for the confession?</a></p>
+    </section>
+
+    <section id="confession" class="main narrow">
+      <header class="page-head reveal" data-reveal>
+        <p class="eyebrow">For your eyes, Jaan</p>
+        <h1>My confession</h1>
+      </header>
+
+      <article class="letter reveal" data-reveal>
+        <p class="letter-greeting">My dearest Jaan,</p>
+
+        <p>
+          Before you, I thought love was a loud thing — fireworks, grand gestures, words shouted from rooftops. You taught me something truer: love is also the hush when you rest your head on my shoulder, the way you remember the small things, the safety I feel when you simply say my name.
+        </p>
+
+        <p>
+          Loving you has been the most honest thing I have ever done. Not because it is always easy — but because even on hard days, my heart still points in one direction. Yours. Always yours.
+        </p>
+
+        <p>
+          You are not just my girlfriend. You are my favourite thought in the morning, my soft place to land at night, my partner in laughter and in growing up. With you, I am braver, kinder, and more myself than I ever thought I could be.
+        </p>
+
+        <p>
+          If I could give you one gift beyond this page, it would be the certainty I carry inside me: <em>I choose you</em> — not once, but in every quiet decision, every ordinary Tuesday, every future I imagine.
+        </p>
+
+        <p class="letter-pull">
+          Jaan, I am so deeply in love with you. Thank you for being my today and every tomorrow I dare to hope for.
+        </p>
+
+        <p class="letter-sign">
+          Forever yours,<br />
+          <span class="signature">with all my love</span>
+        </p>
+      </article>
+
+      <div class="letter-seal reveal" data-reveal>
+        <button type="button" class="seal-btn" id="sealBtn" aria-expanded="false">
+          <span class="seal-wax" aria-hidden="true"></span>
+          <span class="seal-text">Break the seal for one last line</span>
+        </button>
+        <p class="seal-reveal" id="sealReveal" hidden>
+          No matter how many anniversaries we celebrate, I will never get used to how lucky I am that you exist — and that you said yes to me.
+        </p>
+      </div>
+
+      <div class="pager-actions reveal" data-reveal>
+        <a href="#surprises" class="btn btn-primary">More surprises await</a>
+        <a href="#home" class="btn btn-ghost">Back to the beginning</a>
+      </div>
+    </section>
+
+    <section id="surprises" class="main">
+      <header class="page-head reveal" data-reveal>
+        <p class="eyebrow">Playful secrets</p>
+        <h1>Surprises</h1>
+        <p class="lede">Explore slowly. Some things only appear for the curious.</p>
+      </header>
+
+      <div class="surprise-block reveal" data-reveal>
+        <h2>Three wishes</h2>
+        <p>Tap the stars in order: small → medium → big.</p>
+        <div class="wish-row" id="wishRow">
+          <button type="button" class="wish-star" data-size="1" aria-label="Smallest star">✦</button>
+          <button type="button" class="wish-star" data-size="2" aria-label="Medium star">✦</button>
+          <button type="button" class="wish-star" data-size="3" aria-label="Largest star">✦</button>
+        </div>
+        <p class="wish-msg" id="wishMsg" aria-live="polite"></p>
+      </div>
+
+      <div class="surprise-block reveal" data-reveal>
+        <h2>Hidden drawer</h2>
+        <p>Slide the ribbon to the right.</p>
+        <div class="drawer" id="drawer">
+          <div class="drawer-track">
+            <div class="drawer-knob" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Slide to reveal"></div>
+          </div>
+          <p class="drawer-secret" id="drawerSecret" hidden>You are my favourite plot twist.</p>
+        </div>
+      </div>
+
+      <div class="surprise-block reveal" data-reveal>
+        <h2>Love meter</h2>
+        <p>Hold the button (or press and hold on mobile).</p>
+        <button type="button" class="meter-btn" id="meterBtn">Hold me, Jaan</button>
+        <div class="meter-bar"><span class="meter-fill" id="meterFill"></span></div>
+        <p class="meter-done" id="meterDone" hidden>Infinity wasn’t enough — so I picked you instead.</p>
+      </div>
+
+      <div class="surprise-block reveal" data-reveal>
+        <h2>Easter egg</h2>
+        <p>Type the word <kbd>jaan</kbd> anywhere on this page (slowly, like a whisper).</p>
+        <p class="egg-msg" id="eggMsg" aria-live="polite"></p>
+      </div>
+
+      <div class="surprise-block finale reveal" data-reveal>
+        <h2>Finale</h2>
+        <button type="button" class="btn btn-primary" id="celebrateBtn">Celebrate us</button>
+        <p class="finale-text" id="finaleText" hidden>
+          Happy anniversary, Jaan. Here’s to every page we haven’t written yet — I want them all with you.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Made with unbearable softness for <strong>Jaan</strong>.</p>
+    <p class="footer-hint">Psst: try tapping empty space for sparkles — use the menu to jump between sections.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/memories.js"></script>
+  <script src="js/confession.js"></script>
+  <script src="js/surprises.js"></script>
+</body>
+</html>
